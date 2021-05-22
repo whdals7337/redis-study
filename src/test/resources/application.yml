@@ -1,21 +1,4 @@
 spring:
   #profiles
   profiles:
-    include: redis
-
-    #console color
-  output:
-    ansi:
-      enable: ALWAYS
-
-  #Rest api properties name strategy
-  jackson:
-    property-naming-strategy: SNAKE_CASE
-
-#log level
-logging:
-  level:
-    root: info
-    org:
-      hibernate:
-        SQL: debug
+    include: local,redis
