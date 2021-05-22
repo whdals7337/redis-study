@@ -77,7 +77,7 @@ public class RedisTemplateTest {
                 () -> {
                     for (Point findPoint : range) {
                         assertAll(
-                                () -> assertThat(findPoint.getId()).isEqualTo(key),
+                                () -> assertThat(findPoint.getId()).isEqualTo(id),
                                 () -> assertThat(findPoint.getAmount()).isEqualTo(amount),
                                 () -> assertThat(findPoint.getRefreshTime()).isEqualTo(time)
                         );
